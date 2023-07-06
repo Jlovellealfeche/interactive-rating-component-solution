@@ -3,35 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="description" content="A solution for Interactive rating component">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link href="https://cdn.tailwindcss.com" rel="stylesheet"> -->
+  <!-- <link re="stylesheet" href="style.css"> -->
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="flex flex-col justify-center items-center h-screen bg-slate-600">
 
   <!-- Rating state start -->
+ <div class="bg-slate-700 text-gray-50">
+    <h1 class="text-xl font-bold">How did we do?</h1>
 
-  How did we do?
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+    <div class="rating">
+      <span class="rate" onclick="rate(1)">1</span>
+      <span class="rate" onclick="rate(2)">2</span>
+      <span class="rate" onclick="rate(3)">3</span>
+      <span class="rate" onclick="rate(4)">4</span>
+      <span class="rate" onclick="rate(5)">5</span>
+    </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
+    <button id="btn" class=" bg-amber-400 border-none rounded-md">Submit</button>
+  </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+ <p id="result"> You selected <!-- Add rating here --> out of 5</p> 
 
   Thank you!
 
@@ -41,9 +43,7 @@
   <!-- Thank you state end -->
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
 </body>
 </html>
