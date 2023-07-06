@@ -14,7 +14,7 @@
 <body class="flex flex-col justify-center items-center h-screen bg-slate-600">
 
   <!-- Rating state start -->
- <div class="bg-slate-700 text-gray-50">
+ <div id="container" class="bg-slate-700 text-gray-50 flex flex-col gap-5 p-6 max-h-[60%] max-w-[50%]">
     <h1 class="text-xl font-bold">How did we do?</h1>
 
     <p>Please let us know how we did with your support request. All feedback is appreciated 
@@ -27,7 +27,7 @@
       <span class="rate" onclick="rate(5)">5</span>
     </div>
 
-    <button id="btn" class=" bg-amber-400 border-none rounded-md">Submit</button>
+    <button id="btn" class="bg-amber-400 border-none rounded-md">Submit</button>
   </div>
   <!-- Rating state end -->
 
@@ -42,8 +42,9 @@
 
   <!-- Thank you state end -->
 
-  
+  <!--  Javascript  -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="index.js"></script>
+  <script src="app.js"></script>
+
 </body>
 </html>
