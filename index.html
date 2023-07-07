@@ -6,41 +6,35 @@
   <meta name="description" content="A solution for Interactive rating component">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- <link href="https://cdn.tailwindcss.com" rel="stylesheet"> -->
-  <!-- <link re="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="app.css">
   
   <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
-<body class="flex flex-col justify-center items-center h-screen bg-slate-600">
+<body class="flex flex-col justify-center items-center h-screen bg-[#131518]">
 
   <!-- Rating state start -->
- <div id="container" class="bg-slate-700 text-gray-50 flex flex-col gap-5 p-6 max-h-[60%] max-w-[50%]">
+ <div id="container" class="bg-[#181E27] rounded-2xl text-gray-50 flex flex-col gap-5 p-6 max-h-[60%] max-w-[50%]">
+    
+    <img src="images/icon-star.svg " height="16px" width="16px">
+    <span class="star"></span>
+  
     <h1 class="text-xl font-bold">How did we do?</h1>
 
     <p>Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
-    <div class="rating">
-      <span class="rate" onclick="rate(1)">1</span>
+    <div class="rating inline-flex gap-5 ">
+      <span class="rate bg-[#979797]" onclick="rate()">1</span>
       <span class="rate" onclick="rate(2)">2</span>
       <span class="rate" onclick="rate(3)">3</span>
       <span class="rate" onclick="rate(4)">4</span>
       <span class="rate" onclick="rate(5)">5</span>
     </div>
 
-    <button id="btn" class="bg-amber-400 border-none rounded-md">Submit</button>
+    <button onclick="submitRating()" class="bg-[#FC7614] rounded-3xl hover:bg-blue-700 text-white font-bold py-3 px-3 mx-5">Submit</button>
   </div>
   <!-- Rating state end -->
 
-  <!-- Thank you state start -->
-
- <p id="result"> You selected <!-- Add rating here --> out of 5</p> 
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
 
   <!--  Javascript  -->
   <script src="https://cdn.tailwindcss.com"></script>

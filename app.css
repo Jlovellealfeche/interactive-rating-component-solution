@@ -1,3 +1,27 @@
+/* Write CSS Here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 #container {
     min-height: 6rem;
+}
+
+.star {
+    background-color: #262E38;
+    border-radius: 50%;
+    padding: 30px;
+    z-index: -1;
+}
+
+
+.rating > span {
+    width: 25px;
+    height: 25px;
+    background-color: hsl(0, 0, 59, 100%);
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 50%;
 }
