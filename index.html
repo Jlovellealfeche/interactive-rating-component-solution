@@ -23,28 +23,29 @@
 
     <p>Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
-    <div class="rating inline-flex gap-5 ">
-      <span class="rate bg-[#979797]" onclick="rate()">1</span>
-      <span class="rate" onclick="rate(2)">2</span>
-      <span class="rate" onclick="rate(3)">3</span>
-      <span class="rate" onclick="rate(4)">4</span>
-      <span class="rate" onclick="rate(5)">5</span>
-    </div>
+    <ul class="rating inline-flex gap-5 ">
+      <li class="btn" onclick="rate()">1</li>
+      <li class="btn" onclick="rate(2)">2</li>
+      <li class="btn" onclick="rate(3)">3</li>
+      <li class="btn" onclick="rate(4)">4</li>
+      <li class="btn" onclick="rate(5)">5</li>
+    </ul>
 
-    <button onclick="submitRating()" class="bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold py-3 px-3 mx-5">Submit</button>
+    <button onclick="submitRating()" class="btn-submit bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold py-3 px-3 mx-5">Submit</button>
   </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <div class="review">
+  <div class="review text-white">
    
-  You selected <!-- Add rating here --> out of 5
+    <img src="images/illustration-thank-you.svg">
+ <p>You selected <!-- Add rating here --> out of 5</p> 
 
   Thank you!
 
   <p>We appreciate you taking the time to give a rating. If you ever need more support, 
     don’t hesitate to get in touch!</p>
-
+    <button onclick="submitRating()" class="btn-submit bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold py-3 px-3 mx-5">Rate Again</button>
   </div>
   <!-- Thank you state end -->
 
