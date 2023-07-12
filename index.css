@@ -2,6 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --White: hsl(0, 0%, 100%);
     --Light-Grey: hsl(217, 12%, 63%);
@@ -21,29 +28,39 @@ p {
 }
 
 button {
-    font-family: inherit
+    user-select: none;
 }
 
-#container {
-    min-height: 6rem
+ul,
+li,
+button {
+    font-family: inherit;
+    font-size: 1rem;
 }
 
-.star {
-    background-color: #262e38;
+.btn{
+    background-color: var(--Dark-Blue);
+    width: 3rem;
+    height: 3rem;
+    color: var(--White);
+    border:none;
+    outline: none;
     border-radius: 50%;
-    padding: 30px;
-    z-index: -1
+    padding-top: 0.3rem;
+    transition: 0.3s;
 }
+
+.btn:hover {
+    background-color:var(--Light-Grey);
+}
+
+.btn:focus {
+    background-color: var(--Orange);
+}
+
 
 .rating>li {
-    width: 25px;
-    height: 25px;
-    background-color: var(--Light-Grey);
-    background-size: cover;
     cursor: pointer;
-    border-radius: 50%
 }
 
-li:hover {
-    background-color: var(--White)
-}
+

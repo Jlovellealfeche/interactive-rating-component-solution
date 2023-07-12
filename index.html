@@ -11,10 +11,11 @@
   <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
+
 <body class="flex flex-col justify-center items-center h-screen bg-[#131518] text-base">
 
   <!-- Rating state start -->
- <div class="container bg-[#181E27] rounded-2xl text-gray-50 flex flex-col gap-5 p-6 max-h-[60%] max-w-[50%]">
+ <div class=" container bg-[#181E27] rounded-2xl text-gray-50 flex flex-col gap-5 p-6">
     
     <img src="images/icon-star.svg " height="16px" width="16px" class="max-w-[100%]">
     <span class="star"></span>
@@ -24,19 +25,19 @@
     <p>Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
     <ul class="rating inline-flex gap-5 list-none">
-      <li class="btn" onclick="rate()">1</li>
-      <li class="btn" onclick="rate(2)">2</li>
-      <li class="btn" onclick="rate(3)">3</li>
-      <li class="btn" onclick="rate(4)">4</li>
-      <li class="btn" onclick="rate(5)">5</li>
+      <li><button class="btn">1</button></li>
+      <li><button class="btn">2</button></li>
+      <li><button class="btn">3</button></li>
+      <li><button class="btn">4</button></li>
+      <li><button class="btn">5</button></li>
     </ul>
 
-    <button onclick="submitRating()" id="submit-rating" class="btn-submit bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold py-3 px-3 mx-5">Submit</button>
+    <button id="submit-rating" class="btn-submit bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold mt-2 tracking-tight uppercase text-sm transition px-0 py-2">Submit</button>
   </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <div class=" review text-white hidden ">
+  <div class=" review text-white hidden">
    
     <img src="images/illustration-thank-you.svg" class="max-w-[100%]">
     <p class="review-result">You selected
@@ -47,7 +48,7 @@
 
     <p>We appreciate you taking the time to give a rating. If you ever need more support, 
        don’t hesitate to get in touch!</p>
-    <button onclick="submitRating()" id="rate-again" class="btn-submit bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold py-3 px-3 mx-5">Rate Again</button>
+    <button id="rate-again" class="btn-submit bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold py-3 px-3 mx-5">Rate Again</button>
   </div>
   <!-- Thank you state end -->
 
