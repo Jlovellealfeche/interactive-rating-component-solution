@@ -68,10 +68,32 @@ button {
 }
 
 .container,
-.review,
 #fb-review {
     background-image: linear-gradient ( to bottom,
     var(--Gradient-light-shade), 
     var(--Gradient-darker-shade));
     padding: 2rem 1.5rem;
 }
+
+.star {
+    
+    padding: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--Dark-Blue);
+}
+
+.container h1,
+.review h2 {
+    margin-bottom: 1rem;
+}
+
+.container ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .review img {
+    margin: 0 auto 1rem;
+  }
