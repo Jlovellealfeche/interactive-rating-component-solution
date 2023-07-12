@@ -6,12 +6,12 @@
   <meta name="description" content="A solution for Interactive rating component">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- <link href="https://cdn.tailwindcss.com" rel="stylesheet"> -->
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="index.css">
   
   <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
-<body class="flex flex-col justify-center items-center h-screen bg-[#131518]">
+<body class="flex flex-col justify-center items-center h-screen bg-[#131518] text-base">
 
   <!-- Rating state start -->
  <div id=" main-container" class="bg-[#181E27] rounded-2xl text-gray-50 flex flex-col gap-5 p-6 max-h-[60%] max-w-[50%]">
@@ -36,16 +36,18 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <div class="review text-white">
+  <div class=" review text-white hidden">
    
     <img src="images/illustration-thank-you.svg">
- <p>You selected <!-- Add rating here --> out of 5</p> 
+    <p class="review-result">You selected
+      <span id="rating" class="inline-block m-3">1</span> 
+      out of 5</p> 
 
-  Thank you!
+    <h2>Thank you!</h2>
 
-  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!</p>
-    <button onclick="submitRating()" class="btn-submit bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold py-3 px-3 mx-5">Rate Again</button>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+       don’t hesitate to get in touch!</p>
+    <button onclick="submitRating()" id="rate-again" class="btn-submit bg-[#FC7614]  text-white rounded-3xl hover:bg-white hover:text-orange-500 font-bold py-3 px-3 mx-5">Rate Again</button>
   </div>
   <!-- Thank you state end -->
 

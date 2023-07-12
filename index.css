@@ -1,4 +1,8 @@
-/* Write CSS Here */
+/**Font Imports**/
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +19,14 @@
     --Orange: hsl(25, 97%, 53%);
     }
 
+body {
+    font-family: "Overpass", sans-serif;
+}
+
+
+button {
+    font-family: inherit;
+}
 
 #container {
     min-height: 6rem;
