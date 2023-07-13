@@ -69,10 +69,11 @@ button {
 
 .container,
 #fb-review {
-    background-image: linear-gradient ( to bottom,
+    background-image: linear-gradient( to bottom,
     var(--Gradient-light-shade), 
     var(--Gradient-darker-shade));
     padding: 2rem 1.5rem;
+    border-radius: 1rem;
 }
 
 .star {
